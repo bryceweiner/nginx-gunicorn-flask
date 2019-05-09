@@ -1,8 +1,8 @@
 {
   "containerDefinitions": [
     {
-      "name": "hello",
-      "image": "danriti/nginx-gunicorn-flask",
+      "name": "am_api",
+      "image": "bryceweiner/nginx-gunicorn-flask",
       "essential": true,
       "memory": 500,
       "cpu": 10,
@@ -14,5 +14,5 @@
       ]
     }
   ],
-  "family": "hello_world"
+  "family": "api"
 }

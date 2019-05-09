@@ -1,12 +1,12 @@
 # nginx-gunicorn-flask
 
 FROM ubuntu:12.04
-MAINTAINER Daniel Riti <dmriti@gmail.com>
+MAINTAINER Bryce Weiner <bryce.weiner@alt.market>
 
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update
-RUN apt-get install -y python python-pip python-virtualenv nginx gunicorn supervisor
+RUN apt-get install -y python3 python3-pip python3-virtualenv nginx gunicorn supervisor
 
 # Setup flask application
 RUN mkdir -p /deploy/app
